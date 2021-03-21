@@ -1,11 +1,11 @@
-import './code-editor.css';
-import './syntax.css';
 import { useRef } from 'react';
 import MonacoEditor, { EditorDidMount } from '@monaco-editor/react';
 import prettier from 'prettier';
 import parser from 'prettier/parser-babel';
 import codeShift from 'jscodeshift';
 import Highlighter from 'monaco-jsx-highlighter';
+import '../styles/code-editor.css';
+import '../styles/syntax.css';
 
 interface CodeEditorProps {
   initialValue: string;
@@ -68,7 +68,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
       <MonacoEditor
         editorDidMount={onEditorDidMount}
         value={initialValue}
-        height='500px'
+        height='100%'
         language='javascript'
         theme='vs-dark'
         options={{
