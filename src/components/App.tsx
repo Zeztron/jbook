@@ -1,11 +1,9 @@
-// import CodeCell from './CodeCell';
-import TextEditor from './TextEditor';
+import CellList from './CellList';
 
 const App = () => {
   return (
     <div>
-      {/* <CodeCell /> */}
-      <TextEditor />
+      <CellList />
     </div>
   );
 };
