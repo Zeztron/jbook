@@ -1,3 +1,4 @@
+import { AnimateSharedLayout, motion } from 'framer-motion';
 import { Cell } from '../state';
 import CodeCell from './CodeCell';
 import TextEditor from './TextEditor';
@@ -13,17 +14,25 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
   if (cell.type === 'code') {
     child = (
       <>
-        <div className='action-bar-wrapper'>
-          <ActionBar id={cell.id} />
-        </div>
-        <CodeCell cell={cell} />
+        <AnimateSharedLayout>
+          <motion.div layout>
+            <div className='action-bar-wrapper'>
+              <ActionBar id={cell.id} />
+            </div>
+            <CodeCell cell={cell} />
+          </motion.div>
+        </AnimateSharedLayout>
       </>
     );
   } else {
     child = (
       <>
-        <TextEditor cell={cell} />
-        <ActionBar id={cell.id} />
+        <AnimateSharedLayout>
+          <motion.div layout>
+            <TextEditor cell={cell} />
+            <ActionBar id={cell.id} />
+          </motion.div>
+        </AnimateSharedLayout>
       </>
     );
   }
