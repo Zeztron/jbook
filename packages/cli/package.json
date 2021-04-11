@@ -1,5 +1,5 @@
 {
-  "name": "js-note",
+  "name": "@js-note/cli",
   "version": "2.0.0",
   "description": "",
   "bin": "dist/index.js",
