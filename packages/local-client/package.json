@@ -1,6 +1,6 @@
 {
   "name": "@js-note/local-client",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -67,5 +67,5 @@
       "last 1 safari version"
     ]
   },
-  "gitHead": "d9b89f08de5822f455f0431acc8a09f4ea0985c4"
+  "gitHead": "317bb775470b3ffbe8c92c1e3e6a2863933d15d8"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@js-note/cli",
-  "version": "4.0.0",
+  "version": "2.0.0",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -17,14 +17,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@js-note/local-client": "^3.0.0"
+    "@js-note/local-client": "^2.0.0"
   },
   "devDependencies": {
-    "@js-note/local-api": "^3.0.0",
+    "@js-note/local-api": "^2.0.0",
     "@types/node": "^14.14.36",
     "commander": "^7.2.0",
     "esbuild": "0.8.26",
     "typescript": "^4.2.3"
   },
-  "gitHead": "d9b89f08de5822f455f0431acc8a09f4ea0985c4"
+  "gitHead": "317bb775470b3ffbe8c92c1e3e6a2863933d15d8"
 }
